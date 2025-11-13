@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- HTML5 문서 선언 -->
+<html lang="ko">
+  <!-- 문서 언어를 한국어로 지정 -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 한글/특수문자 깨짐 방지 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 기기 크기에 맞춘 반응형 -->
+    <title>포트폴리오</title>
+    <!-- 브라우저 탭에 표시될 제목 -->
+
+    <!-- 파비콘: 탭 아이콘 설정 -->
+    <link rel="shortcut icon" href="images/1.png" type="image/x-icon" />
+    <!-- 부트스트랩 CSS 프레임워크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <!-- ================== 네비게이션 바 ================== -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+      id="nav-scroll"
+    >
+      <!-- navbar-expand-md: md 이상 화면에서 확장됨 -->
+      <!-- navbar-light bg-light: 밝은 배경의 네비게이션 -->
+      <!-- fixed-top: 스크롤 내려도 상단 고정 -->
+      <div class="container">
+        <a href="#" class="navbar-brand">Portfolio</a>
+        <!-- 로고/브랜드 텍스트 -->
+        <!-- 작은 화면용 햄버거 버튼 -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 메뉴 영역 -->
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav fw-bold ms-auto">
+            <!-- ms-auto: 오른쪽 정렬 -->
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================== 홈 섹션 ================== -->
+    <section
+      id="home"
+      class="d-flex min-vh-100 flex-column justify-content-center align-items-center"
+      style="background-image: url('images/5.jpg')"
+    >
+      <!-- d-flex: flexbox 사용 -->
+      <!-- min-vh-100: 화면 높이 100% 채움 -->
+      <!-- justify-content-center align-items-center: 세로/가로 중앙 정렬 -->
+      <!-- style로 배경 이미지 적용 -->
+      <h1 class="fw-bolder display-1 mb-3">Lucie Anderson</h1>
+      <!-- 큰 이름 -->
+      <h6 class="fs-3 text-secondary text-capitalize mb-4">
+        I'm a professional front-end web developer
+      </h6>
+      <!-- 직업 소개 -->
+      <a href="#about" class="btn btn-danger rounded-pill">About Me</a>
+      <!-- 빨간색 버튼, 둥근 캡슐 모양 -->
+    </section>
+
+    <!-- ================== 어바웃 섹션 ================== -->
+    <section id="about" class="container py-5">
+      <!-- container: 중앙 정렬 레이아웃 -->
+      <!-- py-5: 상하 패딩 -->
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">about</h2>
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="row mb-5">
+        <!-- row: 가로 레이아웃 -->
+        <div class="col-md-4 mb-3">
+          <img src="images/100.png" alt="" class="img-fluid" />
+          <!-- 프로필 이미지 (반응형) -->
+        </div>
+        <div class="col-md-7 offset-lg-1">
+          <!-- offset-lg-1: 큰 화면에서 왼쪽 여백 1칸 띄움 -->
+          <p class="lh-lg">Lorem ipsum...</p>
+          <p class="fw-bold fs-4">My Skills:</p>
+          <!-- 진행률 바 (스킬 수준) -->
+          <p>HTML:</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped bg-success"
+              style="width: 70%"
+            >
+              70%
+            </div>
+          </div>
+          <p>CSS:</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-info progress-bar-striped"
+              style="width: 65%"
+            >
+              65%
+            </div>
+          </div>
+          <p>JS:</p>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped bg-warning"
+              style="width: 30%"
+            >
+              30%
+            </div>
+          </div>
+          <p>Bootstrap 5:</p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger"
+              style="width: 90%"
+            >
+              90%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 포트폴리오 섹션 ================== -->
+    <section id="portfolio" class="bg-dark py-5">
+      <!-- 배경색 어두움 -->
+      <div class="container">
+        <div class="text-white py-5 text-center">
+          <h2 class="fw-bolder text-uppercase">My Portfolio</h2>
+          <p>Lorem ipsum...</p>
+        </div>
+        <!-- 3열 이미지 그리드 -->
+        <div class="row pb-5">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/11.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/22.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/33.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/44.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/55.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="images/66.png" alt="" class="img-fluid img-thumbnail" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 블로그 섹션 ================== -->
+    <section id="blog" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">My Blog</h2>
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="row pb-5">
+        <!-- 블로그 카드 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/33.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">
+                Lorem ipsum dolor sit amet.
+              </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur...</p>
+              <a href="#" class="btn btn-light">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 컨택트 섹션 ================== -->
+    <section id="contact" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center py-5 text-white">
+          <h2 class="fw-bolder text-uppercase">Contact Me</h2>
+          <p>Lorem ipsum...</p>
+        </div>
+        <!-- col-xxl-6: 큰 화면에서는 최대 폭 제한 -->
+        <div
+          class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto mb-5"
+        >
+          <form action="" class="text-white">
+            <!-- 이름 입력 -->
+            <div class="mb-3">
+              <label class="form-label">Your Name</label
+              ><input type="text" class="form-control" />
+            </div>
+            <!-- 이메일 입력 -->
+            <div class="mb-3">
+              <label class="form-label">Your Email</label
+              ><input type="email" class="form-control" />
+            </div>
+            <!-- 제목 입력 -->
+            <div class="mb-3">
+              <label class="form-label">Your Subject</label
+              ><input type="text" class="form-control" />
+            </div>
+            <!-- 메시지 입력 -->
+            <div class="mb-3">
+              <label class="form-label">Your Message</label
+              ><textarea rows="10" class="form-control"></textarea>
+            </div>
+            <!-- 전송 버튼 -->
+            <button type="submit" class="btn btn-danger btn-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 푸터 ================== -->
+    <footer class="bg-light">
+      <div class="container text-center">
+        <p class="mb-0 py-3 fs-5">
+          火の神神楽
+          <a
+            href="#본인블로그주소"
+            class="text-danger fst-italic"
+            target="_blank"
+            >MyBlog</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- 부트스트랩 JS 번들 (팝오버, 토글 등 지원) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 네비게이션 클릭 시 현재 메뉴 강조 -->
+    <script>
+      const navLinks = document.querySelectorAll("#nav-scroll .nav-link");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.forEach((l) => l.classList.remove("text-danger", "active"));
+          link.classList.add("text-danger", "active");
+        });
+      });
+    </script>
+  </body>
+</html>

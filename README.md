@@ -11,4 +11,4 @@
 - 깃으로 관리😜
 - 깃허브 페이지 사용해서 배포(Deploy)함
 
-[배포](배포주소적기)
+[배포](https://gyals1508-create.github.io/Portfolio/)
